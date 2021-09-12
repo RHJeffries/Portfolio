@@ -24,6 +24,10 @@ h1 {
     font-size: 30px;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
 /* blinking cursor to look like command prompt screen */
 h1:after {
     content: '';
@@ -85,23 +89,79 @@ h1:after {
           
   }
 
+  .textabout {
+        margin-left: 40px;
+        margin-right: 40px;
+
+  }
+
+aside {
+    flex: 1;
+    width: 120px;
+    height: 100%;
+}
   /* box around sections for clarity */
   .box-it {
     margin-top: 20px;
     display: flex;
+    flex: wrap;
+    flex-grow: 4;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    align-items: flex-start;
     border-style: solid;
     border-color: rgb(255, 0, 0);
   }
 
+  .examples {
+      display: flex;
+  }
+
+  .big-one {
+      display: flex;
+
+  }
+
+  #horiseon {
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    flex: 0 0 300px;
+    color: midnightblue;
+    border-color: seashell;
+    background-color: seashell;
+  }
+
   .workcard {
+      margin-top: 20px;
+      text-align: center;
       border-style: solid;
       border-width: 3px;
       padding: 10px;
       flex: 0 0 300px;
       color: midnightblue;
-      border-color: seashell;
-      background-color: seashell;
+      border-color: linen;
+      background-color: linen;
   }
+
+  .example-others {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .work {
+    
+    text-align: center;
+    color: papayawhip;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+    
+  }
+
 
 /*image size to make sure all fit on screen while styling. Will resize later */  
 img {
