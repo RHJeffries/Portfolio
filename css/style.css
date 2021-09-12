@@ -4,8 +4,8 @@ html {
 
 /* styling for all content */
 body {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
     font-family: 'Courier New', Courier, monospace;
     color: papayawhip;
     background-color: #04010a;
@@ -85,11 +85,24 @@ h1:after {
           
   }
 
+  /* box around sections for clarity */
   .box-it {
     margin-top: 20px;
+    display: flex;
     border-style: solid;
     border-color: rgb(255, 0, 0);
   }
+
+  .workcard {
+      border-style: solid;
+      border-width: 3px;
+      padding: 10px;
+      flex: 0 0 300px;
+      color: midnightblue;
+      border-color: seashell;
+      background-color: seashell;
+  }
+
 /*image size to make sure all fit on screen while styling. Will resize later */  
 img {
     max-height: 400px;
