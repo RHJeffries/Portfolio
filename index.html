@@ -19,23 +19,24 @@
 
     <!-- nav links horizontal across screen -->
     <nav>
-        <a>About</a>
-        <a>Work</a>
-        <a>Contact</a>
+        <a href="#About-me">About</a>
+        <a href="#Work">Work</a>
+        <a href="#Contact">Contact</a>
     </nav>
 
     <main>
 
         <!-- small sapce to show I'm in a learning phase adds personal touch -->
-        <section>
+        <section id="learning">
             <p>learning loading ...</p>
         </section>
 
-        <section>
+        <section class="aboutme">
 
             <!-- adds personality and some info outside work -->
-            <h2>About me ...</h2>
-
+            <h2 class="headabout">About me ...</h2>
+            
+            <article class="textabout">
             <p> Hey there, thanks for checking out my page and wanting to get to know more about me.
                 To start at the start, I'm a long-time web user, first time developer. My journey to web
                 development is only just beginning, but I've been on the other side of technology with years
@@ -52,15 +53,16 @@
                 Outside of the Coding Bootcamp, I enjoy many sports, bike riding and martial arts. Along with a house
                 full of pets that keep me busy.
             </p>
+            </article>
         </section>
 
-        <section>
+        <section id="example1">
 
             <!-- coding examples to show my abilities -->
             <h2>Work ...</h2>
 
             <!-- first example larger than the remaining -->
-            <div>
+            <div id="horiseon">
                 <figure>
                     <h3>Horiseon Refactor</h3>
                     <img> <!-- screenshot of webpage with link to deployed url -->
@@ -70,7 +72,7 @@
         </section>
 
         <!-- further work examples will be smaller-->
-        <section>
+        <section class="example-others workcard">
             <div>
                 <figure>
                     <h4>Cool project 2</h4>
