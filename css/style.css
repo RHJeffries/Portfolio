@@ -128,10 +128,16 @@ aside {
     border-style: solid;
     border-width: 3px;
     padding: 10px;
-    flex: 0 0 300px;
+    flex: 0 0 600px;
     color: midnightblue;
     border-color: seashell;
     background-color: seashell;
+  }
+
+  #example1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .workcard {
@@ -153,7 +159,7 @@ aside {
   }
 
   .work {
-    
+    font-weight: 300;
     text-align: center;
     color: papayawhip;
     margin-top: 20px;
@@ -164,7 +170,8 @@ aside {
 
 
 /*image size to make sure all fit on screen while styling. Will resize later */  
-img {
-    max-height: 400px;
-    max-width: 400px;
+#hori-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
