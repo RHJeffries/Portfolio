@@ -1,36 +1,38 @@
 html {
     scroll-behavior: smooth;
-}
-
-/* styling for all content */
-body {
-    margin-left: 200px;
-    margin-right: 200px;
-    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* styling for all content */
+  body {
+    font-family: "Courier New", Courier, monospace;
     color: papayawhip;
     background-color: #04010a;
-}
-
-
-/* style header to make it standout */
-header {
-    margin-top: 20px;  
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* style header to make it standout */
+  header {
+    margin-top: 20px;
     padding: 40px;
     text-align: center;
-    color: aqua; 
-}
-
-h1 {
+    color: aqua;
+  }
+  
+  h1 {
     font-size: 30px;
-}
-
-h2 {
+  }
+  
+  h2 {
     margin-top: 20px;
-}
-
-/* blinking cursor to look like command prompt screen */
-h1:after {
-    content: '';
+  }
+  
+  /* blinking cursor to look like command prompt screen */
+  h1:after {
+    content: "";
     width: 15px;
     height: 20px;
     background: aqua;
@@ -47,25 +49,25 @@ h1:after {
       opacity: 1;
     }
   }
-
-/* nav button styling for emphasis */  
+  
+  /* nav button styling for emphasis */
   nav {
-    margin-top: 20px;  
+    margin-top: 20px;
     margin-left: 250px;
     margin-right: 250px;
     padding: 20px;
     display: flex;
     justify-content: space-around;
   }
-
+  
   nav a {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    
   }
-
-  .buttons:link, .buttons:visited {
+  
+  .buttons:link,
+  .buttons:visited {
     padding: 14px 25px;
     text-align: center;
     color: papayawhip;
@@ -74,32 +76,41 @@ h1:after {
     border-radius: 8%;
     border-color: chartreuse;
     border-style: solid;
-    
   }
-
+  
+  main.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  main.container > * {
+    max-width: 900px;
+  }
+  
   /* gives current status for bootcamp*/
   #learning {
-
-        margin-top: 50px;
-        padding: 50px;
-        text-align: center;
-        font-size: x-large;
-        font-weight: 600;
-        color: lime;
-          
+    margin-top: 50px;
+    padding: 50px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+    color: lime;
   }
-
+  
   .textabout {
-        margin-left: 40px;
-        margin-right: 40px;
-
+    margin-left: 40px;
+    margin-right: 40px;
   }
-
-aside {
+  
+  aside {
     flex: 1;
     width: 120px;
     height: 100%;
-}
+  }
   /* box around sections for clarity */
   .box-it {
     margin-top: 20px;
@@ -113,65 +124,131 @@ aside {
     border-style: solid;
     border-color: rgb(255, 0, 0);
   }
-
+  
+  .work-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
   .examples {
-      display: flex;
+    display: flex;
   }
-
+  
   .big-one {
-      display: flex;
-
+    display: flex;
   }
-
+  
   #horiseon {
     text-align: center;
     border-style: solid;
     border-width: 3px;
     padding: 10px;
-    flex: 0 0 600px;
+    max-width: 100%;
     color: midnightblue;
     border-color: seashell;
     background-color: seashell;
   }
-
+  
   #example1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0px 20px;
   }
-
+  
   .workcard {
-      margin-top: 20px;
-      text-align: center;
-      border-style: solid;
-      border-width: 3px;
-      padding: 10px;
-      flex: 0 0 300px;
-      color: midnightblue;
-      border-color: linen;
-      background-color: linen;
+    box-sizing: border-box;
+    margin: 20px;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    flex: 1 1 300px;
+    color: midnightblue;
+    border-color: linen;
+    background-color: linen;
   }
-
+  
   .example-others {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
+  
   .work {
     font-weight: 300;
     text-align: center;
     color: papayawhip;
     margin-top: 20px;
     margin-bottom: 20px;
-    justify-content: space-evenly;
-    
+    justify-content: center;
+    align-items: center;
   }
-
-
-/*image size to make sure all fit on screen while styling. Will resize later */  
-#hori-img {
+  
+  /*image size to make sure all fit on screen while styling. Will resize later */
+  #hori-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
+  }
+
+@media screen and (max-width: 992px) {
+    .buttons:link,
+    .buttons:visited {
+  
+          margin-left: 20px;
+          margin-right: 20px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    body {
+      margin-left: 50px;
+    margin-right: 50px;
+    }
+  
+    
+  
+  
+  }
+  
+  @media screen and (max-width: 460px) {
+  
+  
+    header   {
+      margin-bottom: 10px;
+      padding: 0px;
+    }
+  
+    #learning {
+      padding: 10px
+    }
+  
+    body {
+     
+      margin-left: 5px;
+      margin-right: 5px;
+      
+    }
+  
+    nav {
+    
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 10px;
+      border-style:solid;
+      border-color: rgb(255, 0, 0);
+       
+    }
+  
+  
+  
+    .buttons:link,
+    .buttons:visited {
+      padding: 0px;
+      border-style:none;
+    }
+  
+  }
