@@ -57,7 +57,7 @@ html {
     margin-right: 250px;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   
   nav > * {
@@ -82,6 +82,10 @@ html {
     border-style: solid;
   }
   
+  .buttons:hover, 
+  .buttons:active {
+    border-style:dotted;
+  }
   main.container {
     box-sizing: border-box;
     width: 100%;
@@ -125,8 +129,8 @@ html {
     flex-basis: 0%;
     flex-direction: column;
     align-items: center;
-    border-style: solid;
-    border-color: rgb(255, 0, 0);
+    border-style: dotted;
+    border-color: rgb(100, 0, 255);
   }
   
   .work-container {
@@ -197,6 +201,25 @@ html {
     object-fit: cover;
   }
 
+footer {
+    max-width: 900px;
+    list-style: none none;
+}
+
+li a {
+    display: inline;
+    text-align: left;
+
+}
+
+li a:link {
+    color: lime;
+}
+
+li a:visited {
+    color: orangered;
+}
+
 @media screen and (max-width: 992px) {
     .buttons:link,
     .buttons:visited {
@@ -236,13 +259,15 @@ html {
       margin-left: 5px;
       margin-right: 5px;
       margin-top: 10px;
-      border-style:solid;
-      border-color: rgb(255, 0, 0);
+      border-style: dotted;
+      border-color: rgb(100, 0, 255);
        
     }
   
     .buttons:link,
     .buttons:visited {
+      margin-left: 10px;
+      margin-right: 10px;  
       padding: 0px;
       border-style:none;
     }

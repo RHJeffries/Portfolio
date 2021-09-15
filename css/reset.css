@@ -26,3 +26,11 @@ figure {
     margin-inline-start: 0;
     margin-inline-end: 0;
 }
+
+footer {
+   display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
