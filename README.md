@@ -29,3 +29,10 @@ Screen shot of portfolio mobile size ![Screenshot of portfolio mobile size](./sc
 
 ## Credits
 
+I was generously provided some tip by TA Ben Fawcett on aligning content and flex.
+
+Assistance with the blinking cursor and button borders were from W3 schools references
+
+* [CSS Buttons](https://www.w3schools.com/css/css3_animations.asp)
+* [Blinking cursor](https://www.w3schools.com/css/css3_buttons.asp)
+
