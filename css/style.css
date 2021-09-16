@@ -70,6 +70,7 @@ html {
     text-align: center;
   }
   
+  /* links to each section of page */
   .buttons:link,
   .buttons:visited {
     padding: 14px 25px;
@@ -86,6 +87,8 @@ html {
   .buttons:active {
     border-style:dotted;
   }
+
+  /* main content of the page - about me and completed work */
   main.container {
     box-sizing: border-box;
     width: 100%;
@@ -113,12 +116,13 @@ html {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+   /* headings for main 2 parts of the portfolio */
   aside {
     flex: 1;
     width: 120px;
     height: 100%;
   }
+
   /* box around sections for clarity */
   .box-it {
     margin-top: 20px;
@@ -142,6 +146,7 @@ html {
     display: flex;
   }
   
+  /* keep one example larger than the rest */
   .big-one {
     display: flex;
   }
@@ -165,6 +170,7 @@ html {
     padding: 0px 20px;
   }
   
+  /* other examples */
   .workcard {
     box-sizing: border-box;
     margin: 20px;
@@ -206,6 +212,7 @@ footer {
     list-style: none none;
 }
 
+/* footer content */
 li a {
     display: inline;
     text-align: left;
@@ -220,6 +227,7 @@ li a:visited {
     color: orangered;
 }
 
+/* screen sizings */
 @media screen and (max-width: 992px) {
     .buttons:link,
     .buttons:visited {
