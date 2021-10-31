@@ -1,279 +1,223 @@
 html {
-    scroll-behavior: smooth;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* styling for all content */
-body {
-  font-family: "Courier New", Courier, monospace;
-  color: papayawhip;
-  background-color: #04010a;
+  scroll-behavior: smooth;
+  width: 100%;
   margin: 0;
   padding: 0;
-  }
-  
-  /* style header to make it standout */
+}
+
+/* styling for all content */
+body {
+font-family: 'Press Start 2P', cursive;
+color: papayawhip;
+background-color: #04010a;
+margin: 0;
+padding: 0;
+}
+
+/* style header to make it standout */
 header {
-  margin-top: 20px;
-  padding: 40px;
-  text-align: center;
-  color: aqua;
-  }
-  
+margin-top: 20px;
+padding: 40px;
+text-align: center;
+color: aqua;
+}
+
 h1 {
-  font-size: 30px;
-  }
-  
+font-size: 30px;
+}
+
 h2 {
-  margin-top: 20px;
-  }
-  
-  /* blinking cursor to look like command prompt screen */
-  h1:after {
-    content: "";
-    width: 15px;
-    height: 20px;
-    background: aqua;
-    opacity: 0;
-    display: inline-block;
-    animation: blink 1s linear infinite alternate;
-  }
-  
-  @keyframes blink {
-  50% {
+margin-top: 20px;
+color: aqua;
+}
+
+/* blinking cursor to look like command prompt screen */
+h1:after {
+  content: "";
+  width: 15px;
+  height: 20px;
+  background: cyan;
   opacity: 0;
-    }
-  100% {
-  opacity: 1;
-    }
+  display: inline-block;
+  animation: blink 1s linear infinite alternate;
+}
+
+@keyframes blink {
+50% {
+opacity: 0;
   }
-  
-  /* nav button styling for emphasis */
+100% {
+opacity: 1;
+  }
+}
+
+/* nav button styling for emphasis */
+nav {
+  margin-top: 20px;
+ 
+  padding: 20px;
+
+}
+
+
+/* links to each section of page */
+.buttons:link,
+.buttons:visited {
+  padding: 14px 25px;
+  text-align: center;
+  color: papayawhip;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  border-color: chartreuse;
+  border-style: solid;
+}
+
+.buttons:hover, 
+.buttons:active {
+  color: blueviolet;
+  border-style:dotted;
+}
+
+/* main content of the page - about me and completed work */
+main.container {
+  box-sizing: border-box;
+}
+
+main.container > * {
+  max-width: 900px;
+}
+
+/* gives current status for bootcamp*/
+#folio {
+  font-family: 'Press Start 2P', cursive;
+  color:magenta;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.textabout {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+ /* headings for main 2 parts of the portfolio */
+aside {
+
+  color: cyan;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+}
+
+h6 {
+    color: magenta;
+    text-align: center;
+}
+
+/* box around sections for clarity */
+.box-it {
+  padding: 15px;
+  border-style: dotted;
+  border-color: rgb(100, 0, 255);
+  border-radius: 8px;
+}
+
+
+#project-one {
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 0.25rem;
+  padding: 10px;
+  max-width: 100%;
+  color: blue;
+  border-color: seashell;
+  background-color: seashell;
+}
+
+
+/* other examples */
+.card {
+  font-family: 'Rock Salt', cursive;
+  color: blue;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  align-items: center;
+  border-color: seashell;
+  background-color: seashell;
+}
+
+
+.work {
+  font-weight: 300;
+  text-align: center;
+  color: papayawhip;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  list-style-type: none none;
+}
+
+.list {
+  font-family: 'Inconsolata', monospace;
+    
+}
+
+li a:link {
+  color: lime;
+}
+
+li a:visited {
+  color: orangered;
+}
+
+
+@media screen and (max-width: 460px) {
+
+  header   {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+
+#folio {
+    text-align: left;
+}
+
   nav {
-    margin-top: 20px;
-    margin-left: 250px;
-    margin-right: 250px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-  }
   
-  nav > * {
-    max-width: 900px;
-  }
-
-  nav a {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  /* links to each section of page */
-  .buttons:link,
-  .buttons:visited {
-    padding: 14px 25px;
-    text-align: center;
-    color: papayawhip;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8%;
-    border-color: chartreuse;
-    border-style: solid;
-  }
-  
-  .buttons:hover, 
-  .buttons:active {
-    border-style:dotted;
-  }
-
-  /* main content of the page - about me and completed work */
-  main.container {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  main.container > * {
-    max-width: 900px;
-  }
-  
-  /* gives current status for bootcamp*/
-  #learning {
-    margin-top: 50px;
-    padding: 50px;
-    text-align: center;
-    font-size: x-large;
-    font-weight: 600;
-    color: lime;
-  }
-  
-  .textabout {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-   /* headings for main 2 parts of the portfolio */
-  aside {
-    flex: 1;
-    width: 120px;
-    height: 100%;
-  }
-
-  /* box around sections for clarity */
-  .box-it {
-    margin-top: 20px;
-    display: flex;
-    flex: wrap;
-    flex-grow: 4;
-    flex-shrink: 1;
-    flex-basis: 0%;
-    flex-direction: column;
-    align-items: center;
+    /*margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;*/
     border-style: dotted;
     border-color: rgb(100, 0, 255);
   }
-  
-  .work-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .examples {
-    display: flex;
-  }
-  
-  /* keep one example larger than the rest */
-  .big-one {
-    display: flex;
-  }
-  
-  #horiseon {
-    margin-top: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 3px;
-    padding: 10px;
-    max-width: 100%;
-    color: midnightblue;
-    border-color: seashell;
-    background-color: seashell;
-  }
-  
-  #example1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0px 20px;
-  }
-  
-  /* other examples */
-  .workcard {
-    box-sizing: border-box;
-    margin: 20px;
-    text-align: center;
-    border-style: solid;
-    border-width: 3px;
-    padding: 10px;
-    flex: 0 1 300px;
-    color: midnightblue;
-    border-color: linen;
-    background-color: linen;
-  }
-  
-  .example-others {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .work {
-    font-weight: 300;
-    text-align: center;
-    color: papayawhip;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /*image size to make sure all fit on screen while styling. Will resize later */
-  #hori-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+
+  .buttons:link,
+  .buttons:visited {
+  /*  margin-left: 0px;
+    margin-right: 0px;  
+    padding: 0px;*/
+    border-style:none;
   }
 
-  footer {
-    max-width: 900px;
-    list-style: none none;
-  }
-
-  /* footer content */
-  li a {
-    display: inline;
-    text-align: left;
-  }
-
-  li a:link {
+  .buttons:hover, 
+  .buttons:active {
     color: lime;
   }
 
-  li a:visited {
-    color: orangered;
+ #project-one {
+     margin: 0;
+     padding: 0;
+ }
   }
-
-/* screen sizings */
-  @media screen and (max-width: 992px) {
-    .buttons:link,
-    .buttons:visited { 
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    
-  }
-  
-  @media screen and (max-width: 768px) {
-  
-    body {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-  
-    }
-  
-  @media screen and (max-width: 460px) {
-  
-    header   {
-      margin-bottom: 10px;
-      padding: 0px;
-    }
-  
-    #learning {
-      padding: 10px
-    }
-  
-    nav {
-    
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-top: 10px;
-      border-style: dotted;
-      border-color: rgb(100, 0, 255);
-    }
-  
-    .buttons:link,
-    .buttons:visited {
-      margin-left: 10px;
-      margin-right: 10px;  
-      padding: 0px;
-      border-style:none;
-    }
-  
-    main.container {
-        padding: 0px;
-      }
-    }
